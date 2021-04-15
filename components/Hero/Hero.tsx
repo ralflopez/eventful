@@ -1,21 +1,22 @@
 import React from 'react';
 import Search from '../Elements/Search';
-import Background_ from './Background_';
+import Container from '../Util/Container';
 import MainImg_ from './MainImg_';
 import Title_ from './Title_';
 
 const Hero = () => {
     return (
-        <div className="flex flex-col justify-around min-h-screen pt-16 md:items-center md:pt-0 md:flex-row">
-            <div className="flex-grow max-w-md text-center">
-                <Title_ />
-                <Search />
+        <Container className="bg-blue-500">
+            <div className="flex flex-col justify-around min-h-screen pt-16 md:items-center md:pt-0 md:flex-row">
+                <div className="flex-grow w-full max-w-sm pt-3 mx-auto text-center">
+                    <Title_ />
+                    <Search hover={true}/>
+                </div>
+                <div className="flex-grow flex-shrink-0 mx-auto md:ml-10 md:flex-grow-0">
+                    <MainImg_ />
+                </div>
             </div>
-            <div className="md:ml-10">
-                <MainImg_ />
-            </div>
-            <Background_ />
-        </div>
+        </Container>
     )
 }
 

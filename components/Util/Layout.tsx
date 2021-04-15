@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <>
             <Meta />
             <Nav />
-            <div className="max-w-6xl px-5 mx-auto sm:px-7">
+            <div className="">
                 {children}
             </div>
         </>
