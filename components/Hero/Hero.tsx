@@ -3,6 +3,7 @@ import Search from '../Elements/Search';
 import Container from '../Util/Container';
 import MainImg_ from './MainImg_';
 import Title_ from './Title_';
+import DraggableDiv from '../Elements/DraggableDiv';
 
 const Hero = () => {
     return (
@@ -13,7 +14,7 @@ const Hero = () => {
                     <Search hover={true}/>
                 </div>
                 <div className="flex-grow flex-shrink-0 mx-auto md:ml-10 md:flex-grow-0">
-                    <MainImg_ />
+                    <MainImg_ className="p-6 m-10"/>
                 </div>
             </div>
         </Container>

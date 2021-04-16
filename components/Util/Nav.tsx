@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { useRouter, NextRouter } from 'next/router';
 
 const Nav = () => {
+    const [hidden, setHidden] = useState<boolean>(false);
     const [atTop, setAtTop] = useState<boolean>(false);
     const { pathname }: NextRouter = useRouter();
-    console.log(pathname);
 
     const toggleColor = (e: Event) => {
         if(window.scrollY === 0)
@@ -18,16 +18,23 @@ const Nav = () => {
         if(pathname !== '/' && pathname !== '/events/[id]') return;
         else setAtTop(true);
         
-        console.log('yes sir')
         document.addEventListener('scroll', toggleColor);
 
         return () => {
             setAtTop(false);
             document.removeEventListener('scroll', toggleColor);
-            console.log('wee')
         }
         
     }, [pathname]);
+
+    useEffect(() => {
+        if(pathname.includes('/auth') && !hidden)
+            setHidden(true);
+        else if(hidden)
+            setHidden(false);
+    }, [pathname]);
+
+    if(hidden) return (null);
 
     return (
         <div className={`fixed z-10 w-full transition-all ease-out duration-300 ${atTop ? 'bg-transparent text-white' : 'bg-white shadow-sm'}`}>
