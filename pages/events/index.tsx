@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '../../components/Elements/Search';
-import Card from '../../components/Events/Card';
+import Card from '../../components/Elements/Card';
 import Container from '../../components/Util/Container';
 
 const Events = () => {
