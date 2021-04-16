@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from '../../components/Util/Container';
-import Ticket from '../../components/Elements/Ticket';
-import JoinButton from '../../components/Elements/JoinButton';
+import Ticket from '../../components/Events/Ticket';
+import JoinButton from '../../components/Events/JoinButton';
+import EventsDetails from '../../components/Events/EventsDetails';
 
 const Event = () => {
     return (
@@ -13,6 +14,8 @@ const Event = () => {
                 <Ticket />
                 <JoinButton />
             </div>
+            {/* Details */}
+            <EventsDetails />
         </Container>
     )
 }
