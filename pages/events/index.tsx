@@ -10,7 +10,7 @@ const Events = () => {
             <div className="flex">
                 {/* <div className="h-10 md:w-1/5"></div> */}
                 <div className="w-full md:w-4/">
-                    <Search className="mt-3 mb-7 md:mb-8"/>
+                    <Search light={true} className="mt-3 mb-7 md:mb-8"/>
                     <div className="flex flex-wrap">
                         <Card>
                             <Card.Title>Hello World</Card.Title>

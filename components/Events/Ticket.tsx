@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Ticket = () => {
+const Ticket = (props: any) => {
     return (
-        <div className="flex w-full h-48 max-w-lg pt-2 mx-auto mb-5">
+        <div className="flex w-full h-48 max-w-lg pt-2 mx-auto mb-5" {...props} >
            {/* left */}
            <div className="flex w-full p-6 mx-auto bg-white shadow-2xl sm:w-4/5 rounded-xl sm:mx-0">
                 <div className="relative flex-grow-0 w-10 h-full mr-5">

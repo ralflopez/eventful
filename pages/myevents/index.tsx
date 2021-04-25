@@ -10,8 +10,8 @@ const index = () => {
                 <MyEventsProfile />
                 <div className="flex-grow">
                     <h4 className="text-xl font-bold text-center">Events</h4>
-                    <Ticket />
-                    <Ticket />
+                    <Ticket style={{transform: 'scale(0.9'}}/>
+                    <Ticket style={{transform: 'scale(0.9'}}/>
                 </div>
             </div>
         </Container>

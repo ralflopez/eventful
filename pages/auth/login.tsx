@@ -11,7 +11,7 @@ const login = () => {
     }
 
     return (
-        <Container className="flex items-center justify-center min-h-screen text-center bg-blue-500">
+        <Container className="flex items-center justify-center min-h-screen p-5 text-center bg-blue-500">
             <MainImg_ className="mb-5"/>
             <Title_ className="text-center text-blue-600"/>
             <GoogleSignIn 

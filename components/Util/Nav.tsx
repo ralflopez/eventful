@@ -37,7 +37,7 @@ const Nav = () => {
     if(hidden) return (null);
 
     return (
-        <div className={`fixed z-10 w-full transition-all ease-out duration-300 ${atTop ? 'bg-transparent text-white' : 'bg-white shadow-sm'}`}>
+        <div className={`fixed font-nunito z-10 w-full transition-all ease-out duration-300 ${atTop ? 'bg-transparent text-white' : 'bg-white shadow-sm'}`}>
             <div className="left-0 right-0 flex items-center justify-between h-16 max-w-6xl px-5 mx-auto sm:px-7">
                 <h2 className="text-2xl font-bold">E</h2>
                 <nav className="flex items-center">

@@ -7,7 +7,7 @@ import DraggableDiv from '../Elements/DraggableDiv';
 
 const Hero = () => {
     return (
-        <Container className="bg-blue-500">
+        <Container className="bg-blue-600">
             <div className="flex flex-col justify-around min-h-screen pt-16 md:items-center md:pt-0 md:flex-row">
                 <div className="flex-grow w-full max-w-sm pt-3 mx-auto text-center">
                     <Title_ />

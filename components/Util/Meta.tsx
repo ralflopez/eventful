@@ -15,6 +15,8 @@ const Meta = ({ title, keywords, description }: Props) => {
             <meta name='description' content={description} />
             <meta charSet='utf-8' />
             <link rel='icon' href='/favicon.ico' />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
             <title>{title}</title>
         </Head>
     )

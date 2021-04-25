@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from '../../components/Util/Container';
-import Ticket from '../../components/Events/Ticket';
-import JoinButton from '../../components/Events/JoinButton';
-import EventsDetails from '../../components/Events/EventsDetails';
+import Container from '../../../components/Util/Container';
+import Ticket from '../../../components/Events/Ticket';
+import JoinButton from '../../../components/Events/JoinButton';
+import EventsDetails from '../../../components/Events/EventsDetails';
 
 const Event = () => {
     return (
